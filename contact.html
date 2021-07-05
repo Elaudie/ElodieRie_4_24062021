@@ -2,27 +2,52 @@
 <html lang="Default">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="keywords" 
+		content="seo, google, site web, site internet, agence design paris, agence design, création site web, stratégie web, illustration, la chouette agence, Lyon, Rhône-Alpes, Agence web à paris, stratégie web, web design, illustrations, design de site web, ">
+    <meta name="description" 
+		content="La Chouette Agence, meilleure agence de webdesign à Lyon, aide les entreprises à réaliser leur futur projet !">
+    <meta name="viewport" 
+		content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+	<!--Twitter cards-->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@Lachouetteagence">
+	<meta name="twitter:description"
+		content="La chouette agence, entreprise de Web design à Lyon, qui aide les entreprises à réaliser leur futur projet !">
+	<meta name="twitter:title" content="La chouette agence | Entreprise Web design à Lyon.">
+	<meta name="twitter:image" content="https://github.com/Elaudie/ElodieRie_4_24062021/tree/master/img/logo.png">
+	<meta name="twitter:image:alt" content="Image de La Chouette Agence">
+<!--Twitter cards END-->
+
+<!--Autorise l'indexation dans moteur recherche-->
+	<meta name="robots" content="index, follow">
+<!--Fin utorisation indexaction dans moteur recherche-->
+
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
-    <title>page2</title>
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
+	<script src="./js/jquery.touchSwipe.js" defer></script>
+	<script src="./js/gmaps.js"></script>
+
+    <title>La Chouette Agence, meilleure agence de webdesign à Lyon</title>
 
     
 <!-- Analytics -->
- 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LY0PX4JHFC"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+  
+		gtag('config', 'G-LY0PX4JHFC');
+  </script>
 <!-- Analytics END -->
     
 </head>
@@ -35,7 +60,7 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="atlanta web design logo" height="40" /></a>
+				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="Logo de la Chouette Agence"/></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -46,9 +71,10 @@
 						<a href="index.html">Accueil</a>
 					</li>
 					<li>
+						<a href="index.html#bloc-2-services" title="Nos services">Nos services</a>
 					</li>
 					<li>
-						<a href="page2.html">page2 &gt;</a>
+						<a href="index.html#bloc-4-portfolio" title="Notre portfolio">Notre portfolio</a>
 					</li>
 				</ul>
 			</div>
@@ -58,7 +84,8 @@
 <!-- bloc-0 END -->
 
 <!-- bloc-6 -->
-<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" 
+	id="bloc-6">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
@@ -72,37 +99,42 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-6 END -->
 
 <!-- bloc-7 -->
-<div class="bloc bgc-white l-bloc" id="bloc-7">
+<section class="bloc bgc-white l-bloc" id="bloc-7">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input type="text" id="name" placeholder="Nom et Prénom" 
+						class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input type="email" id="email" placeholder="Email" 
+						class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="info">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<input type="text" id="info" placeholder="Racontez nous comment vous nous avez connu" 
+						class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label>
+						<textarea id="message" placeholder="Parlez nous de votre projet" 
+						class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
@@ -116,7 +148,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-7 END -->
 
 <!-- ScrollToTop Button -->
@@ -130,7 +162,7 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<p class="text-center white">
-					La chouette agence - Agence web basée à Lyon.<br>
+					La Chouette Agence - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
