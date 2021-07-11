@@ -828,7 +828,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/image-de-presentation.jpeg");
 }
 
 .col-sm-7 {
@@ -1029,7 +1029,7 @@ h4 {
         margin-top: 30px;
     }
     form {
-        padding: 10px;
+        padding: px;
     }
     .close-lightbox {
         display: inline-block;
