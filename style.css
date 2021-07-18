@@ -835,6 +835,15 @@ h4 {
     padding-top: 60px;
 }
 
+.adressecontact {
+    padding: 150px 0 0 100px;
+}
+
+.col-sm-12 {
+    text-align: center;
+    padding-top: 10px;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -1029,8 +1038,13 @@ h4 {
         margin-top: 30px;
     }
     form {
-        padding: px;
+        padding: 10px;
     }
+
+    .adressecontact {
+        padding: 10px;
+    }
+
     .close-lightbox {
         display: inline-block;
     }
