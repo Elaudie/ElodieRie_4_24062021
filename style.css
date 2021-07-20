@@ -770,7 +770,7 @@ h4 {
 }
 
 .bgc-white {
-    background-color: #FFFFFF;
+    background-color: black;
 }
 
 .bgc-dark-slate-blue {
@@ -778,7 +778,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: lightsalmon;
+    background-color: salmon;
 }
 
 .tc-white {
