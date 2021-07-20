@@ -743,7 +743,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .portfolio-thumb {
@@ -770,7 +770,7 @@ h4 {
 }
 
 .bgc-white {
-    background-color: black;
+    background-color: #FFFFFF;
 }
 
 .bgc-dark-slate-blue {
